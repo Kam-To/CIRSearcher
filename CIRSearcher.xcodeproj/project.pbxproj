@@ -9,12 +9,33 @@
 /* Begin PBXBuildFile section */
 		3AC83D8926974C53008DDC7C /* CIRSearcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC83D8826974C53008DDC7C /* CIRSearcher.h */; };
 		3AC83D8B26974C53008DDC7C /* CIRSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC83D8A26974C53008DDC7C /* CIRSearcher.m */; };
+		3AC83D9D26974CB8008DDC7C /* CIRBitArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC83D9B26974CB8008DDC7C /* CIRBitArray.h */; };
+		3AC83D9E26974CB8008DDC7C /* CIRBitArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC83D9C26974CB8008DDC7C /* CIRBitArray.m */; };
+		3AC83DA626975097008DDC7C /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC83DA526975097008DDC7C /* Tests.m */; };
+		3AC83DA826975097008DDC7C /* libCIRSearcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC83D8526974C53008DDC7C /* libCIRSearcher.a */; };
+		3AC83DAF269750A9008DDC7C /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AC83DAE269750A9008DDC7C /* name.txt */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AC83DA926975097008DDC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AC83D7D26974C53008DDC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AC83D8426974C53008DDC7C;
+			remoteInfo = CIRSearcher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3AC83D8526974C53008DDC7C /* libCIRSearcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCIRSearcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AC83D8826974C53008DDC7C /* CIRSearcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIRSearcher.h; sourceTree = "<group>"; };
 		3AC83D8A26974C53008DDC7C /* CIRSearcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIRSearcher.m; sourceTree = "<group>"; };
+		3AC83D9B26974CB8008DDC7C /* CIRBitArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIRBitArray.h; sourceTree = "<group>"; };
+		3AC83D9C26974CB8008DDC7C /* CIRBitArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIRBitArray.m; sourceTree = "<group>"; };
+		3AC83DA326975097008DDC7C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC83DA526975097008DDC7C /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		3AC83DA726975097008DDC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AC83DAE269750A9008DDC7C /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +46,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC83DA026975097008DDC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC83DA826975097008DDC7C /* libCIRSearcher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -32,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC83D8726974C53008DDC7C /* CIRSearcher */,
+				3AC83DA426975097008DDC7C /* Tests */,
 				3AC83D8626974C53008DDC7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC83D8526974C53008DDC7C /* libCIRSearcher.a */,
+				3AC83DA326975097008DDC7C /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -49,8 +80,20 @@
 			children = (
 				3AC83D8826974C53008DDC7C /* CIRSearcher.h */,
 				3AC83D8A26974C53008DDC7C /* CIRSearcher.m */,
+				3AC83D9B26974CB8008DDC7C /* CIRBitArray.h */,
+				3AC83D9C26974CB8008DDC7C /* CIRBitArray.m */,
 			);
 			path = CIRSearcher;
+			sourceTree = "<group>";
+		};
+		3AC83DA426975097008DDC7C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3AC83DAE269750A9008DDC7C /* name.txt */,
+				3AC83DA526975097008DDC7C /* Tests.m */,
+				3AC83DA726975097008DDC7C /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC83D8926974C53008DDC7C /* CIRSearcher.h in Headers */,
+				3AC83D9D26974CB8008DDC7C /* CIRBitArray.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +128,24 @@
 			productReference = 3AC83D8526974C53008DDC7C /* libCIRSearcher.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		3AC83DA226975097008DDC7C /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC83DAB26975097008DDC7C /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				3AC83D9F26975097008DDC7C /* Sources */,
+				3AC83DA026975097008DDC7C /* Frameworks */,
+				3AC83DA126975097008DDC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AC83DAA26975097008DDC7C /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 3AC83DA326975097008DDC7C /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +155,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					3AC83D8426974C53008DDC7C = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					3AC83DA226975097008DDC7C = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -111,9 +176,21 @@
 			projectRoot = "";
 			targets = (
 				3AC83D8426974C53008DDC7C /* CIRSearcher */,
+				3AC83DA226975097008DDC7C /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AC83DA126975097008DDC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC83DAF269750A9008DDC7C /* name.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AC83D8226974C53008DDC7C /* Sources */ = {
@@ -121,10 +198,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC83D8B26974C53008DDC7C /* CIRSearcher.m in Sources */,
+				3AC83D9E26974CB8008DDC7C /* CIRBitArray.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC83D9F26975097008DDC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC83DA626975097008DDC7C /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AC83DAA26975097008DDC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AC83D8426974C53008DDC7C /* CIRSearcher */;
+			targetProxy = 3AC83DA926975097008DDC7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3AC83D8C26974C53008DDC7C /* Debug */ = {
@@ -258,6 +352,38 @@
 			};
 			name = Release;
 		};
+		3AC83DAC26975097008DDC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kam.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AC83DAD26975097008DDC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kam.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +401,15 @@
 			buildConfigurations = (
 				3AC83D8F26974C53008DDC7C /* Debug */,
 				3AC83D9026974C53008DDC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC83DAB26975097008DDC7C /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC83DAC26975097008DDC7C /* Debug */,
+				3AC83DAD26975097008DDC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
