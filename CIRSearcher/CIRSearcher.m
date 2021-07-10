@@ -18,7 +18,7 @@
 
 
 @interface CIRSearcher () {
-    NSArray<CIRSearchable> *_totalData;
+    NSArray<id<CIRSearchable>> *_totalData;
     NSMutableDictionary<NSString *, CIRSearchResult *> *_textResultMap;
     NSMutableArray<NSString *> *_keywordSequence;
 }
@@ -32,19 +32,19 @@
     return self;
 }
 
-- (void)setSearchableData:(NSArray<CIRSearchable> *)data {
+- (void)setSearchableData:(NSArray<id<CIRSearchable>> *)data {
     if (_totalData == data) return;
     _totalData = data;
     [_textResultMap removeAllObjects];
     [_keywordSequence removeAllObjects];
 }
 
-- (NSArray<CIRSearchable> *)searchWithText:(NSString *)text {
+- (NSArray<id<CIRSearchable>> *)searchWithText:(NSString *)text {
     
     if (!text.length) {
         [_textResultMap removeAllObjects];
         [_keywordSequence removeAllObjects];
-        return (NSArray<CIRSearchable> *)@[];
+        return (NSArray<id<CIRSearchable>> *)@[];
     }
     
     NSInteger lastIndex = text.length;
@@ -69,7 +69,7 @@
         cursor--;
     }
     
-    NSMutableArray<CIRSearchable> *result = (NSMutableArray<CIRSearchable> *)[NSMutableArray new];
+    NSMutableArray<id<CIRSearchable>> *result = (NSMutableArray<id<CIRSearchable>> *)[NSMutableArray new];
     
     BOOL hit = cache && [cache->_keyword isEqual:text];
     if (hit) {

@@ -12,6 +12,6 @@
 @end
 
 @interface CIRSearcher : NSObject
-- (void)setSearchableData:(NSArray<CIRSearchable> *)data;
-- (NSArray<CIRSearchable> *)searchWithText:(NSString *)text;
+- (void)setSearchableData:(NSArray<id<CIRSearchable>> *)data;
+- (NSArray<id<CIRSearchable>> *)searchWithText:(NSString *)text;
 @end
